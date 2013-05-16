@@ -1,0 +1,36 @@
+<html xmlns:py="http://genshi.edgewall.org/"
+  xmlns:i18n="http://genshi.edgewall.org/i18n"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+
+  <py:def function="page_title">Categories</py:def>
+  <py:def function="page_heading">Categories</py:def>
+
+  <div py:match="content">
+    <table class="table table-bordered table-striped table-condensed groups">
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Number of datasets</th>
+        <!--th scope="col">Description</th -->
+      </tr>
+      <py:for each="category in c.page.items">
+        <tr>
+          <td><a href="${h.url_for('/category/' + str(category['id']))}">${category['display_name']}</a></td>
+          <td>${category['packages']}</td>
+          <!-- td>${h.truncate(category['description'], length=80, whole_word=True)}</td -->
+        </tr>
+      </py:for>
+    </table>
+    ${c.page.pager()}
+  </div>
+  
+  <py:match path="primarysidebar">
+    <li class="widget-container boxed widget_text">
+      <h3>What Are Categories?</h3>
+      <span i18n:msg="">Data categories are...</span>
+    </li>
+  </py:match>
+  
+
+  <xi:include href="category_layout.html" />
+</html>
