@@ -1,7 +1,8 @@
-ckanext-patcategories-
-======================
+ckanext patcategories
+=====================
 
 How to use
+==========
 
 I comandi che possono essere usati per creare e cancellare nuove voci
 dei vocabolari presenti; i comandi vanno lanciati dalla cartella del
@@ -18,6 +19,7 @@ file>
 
 
 Example
+=======
 
 paster pat add-term category_vocab Mobilita -c
 /etc/ckan.ini
