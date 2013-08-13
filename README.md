@@ -40,3 +40,18 @@ The terms cad be added to this different vocabularies:
 - holders_vocab (Holders)
 - coverage_vocab (Geographical coverage)
 
+Categories used in dati.trentino.it
+===================================
+Ambiente
+Amministrazione
+Conoscenza
+Cultura
+Demografia
+Economia
+Gestione del territorio
+Meteo
+Mobilita
+Politica
+Sicurezza
+Sport
+Welfare
