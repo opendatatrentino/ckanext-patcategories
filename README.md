@@ -1,6 +1,12 @@
 ckanext patcategories
 =====================
 
+Install
+=======
+```bash
+pip install -e git+https://github.com/opendatatrentino/ckanext-patcategories.git#egg=ckanext-categories 
+```
+
 How to use
 ==========
 
